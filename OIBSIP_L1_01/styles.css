@@ -1,0 +1,267 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f9fa; 
+}
+
+header {
+    background: #000000; 
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #249a96; /* Teal hover */
+    border-radius: 5px;
+}
+
+#home {
+    background: url('https://www.pexels.com/photo/green-trees-and-mountains-1251870/') no-repeat center center/cover;
+    color: #000000;
+    padding: 60px 20px; 
+    margin: 0; 
+    position: relative;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.overlay {
+    background: #45d0c9;
+    padding: 40px 100px;
+    text-align: center;
+    max-width: max-content;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.intro {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.details {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.intro-video {
+    margin-top: 20px;
+}
+
+.intro-video video {
+    max-width: 100%;
+    width: 600px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background: #289690; 
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-top: 20px;
+    cursor: pointer;
+    outline: black;
+}
+
+.cta-button:hover {
+    background: #000000; 
+}
+
+/* About Section Styling */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #45d0c9;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #000;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.gallery-image {
+    max-width: 30%; /* Adjust the width of each image as needed */
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Services Section Styling */
+#services {
+    padding: 60px 20px;
+    text-align: center;
+    background: #ffffff; 
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.service-box {
+    background: #45d0c9;
+    padding: 30px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-box:hover {
+    transform: translateY(-5px); 
+}
+
+.service-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #000000; 
+}
+
+.service-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #000000; 
+}
+
+/* Contact Section Styling */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background:  #45d0c9;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: black;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #000000;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000;
+}
+
+form label {
+    margin: 10px 0 5px;
+}
+
+form input[type="text"],
+form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #050000;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #0a6c67;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+form input[type="submit"]:hover {
+    background: #000000;
+}
+
+/* Footer Styling */
+footer {
+    background: #000000; 
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1rem;
+}
