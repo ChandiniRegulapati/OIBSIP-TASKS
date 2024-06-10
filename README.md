@@ -1,4 +1,4 @@
-# OASIS INFOBYTE TASKS
+# Oasis Infobyte Internship Tasks collection
 ## WEB DEVELOPMENT
 ## LEVEL-1
 ### Task 1 - Landing Page
