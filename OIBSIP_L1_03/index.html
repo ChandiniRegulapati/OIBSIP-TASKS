@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="https://res.cloudinary.com/dnmnqrcw3/image/upload/v1718362648/scalesanimsvg_jb4c1u.svg" type="image/x-icon">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Temperature Converter</h1>
+    <div class="converter-card">
+      <div class="input-group">
+        <input type="number" id="input-temp" class="input-temp" placeholder="Enter temperature">
+        <select id="input-scale" class="input-scale">
+          <option value="celsius">°C</option>
+          <option value="fahrenheit">°F</option>
+          <option value="kelvin">K</option>
+        </select>
+      </div>
+      <button id="convert-btn" class="convert-btn">Convert</button>
+      <div class="output-group">
+        <div class="output">
+          <h3>Celsius</h3>
+          <p id="celsius-output">0 °C</p>
+        </div>
+        <div class="output">
+          <h3>Fahrenheit</h3>
+          <p id="fahrenheit-output">32 °F</p>
+        </div>
+        <div class="output">
+          <h3>Kelvin</h3>
+          <p id="kelvin-output">273.15 K</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
